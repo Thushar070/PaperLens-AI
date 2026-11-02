@@ -1,0 +1,35 @@
+{
+  "name": "paperlens-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "prepare:standalone": "node scripts/prepare-standalone.mjs",
+    "test:e2e": "npm run prepare:standalone && playwright test",
+    "test:all": "npm run typecheck && npm run lint && npm test && npm run build && npm run test:e2e"
+  },
+  "dependencies": {
+    "next": "16.4.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@playwright/test": "1.64.1",
+    "@testing-library/jest-dom": "6.6.4",
+    "@testing-library/react": "16.3.0",
+    "@types/node": "22.15.30",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.7",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.1",
+    "jsdom": "26.1.0",
+    "typescript": "5.9.3",
+    "vitest": "3.2.4"
+  }
+}

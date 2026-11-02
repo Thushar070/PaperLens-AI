@@ -1,0 +1,9 @@
+**
+!backend/
+!backend/requirements-phase9.txt
+!backend/app/
+!backend/app/**
+!ml/
+!ml/**
+**/__pycache__/
+**/*.py[cod]
