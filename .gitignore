@@ -1,0 +1,96 @@
+# Python bytecode and tooling caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Local Python environments and downloaded resources
+.venv/
+venv/
+ENV/
+/.phase1_dependencies/
+/.phase1_cache/
+/.phase2_resources/
+/.phase2_venv/
+/.phase9_tmp/
+
+# Local credentials and environment files; keep the placeholder template
+**/.env
+**/.env.*
+!/.env.example
+
+# Datasets, generated outputs, and model artifacts
+/datasets/
+/data/
+/artifacts/
+**/*.arrow
+**/*.parquet
+**/*.csv
+**/*.tsv
+**/*.jsonl
+**/*.npy
+**/*.npz
+**/*.pkl
+**/*.joblib
+**/*.pt
+**/*.pth
+**/*.bin
+**/*.safetensors
+**/*.onnx
+**/*.ckpt
+**/*.model
+**/*.weights
+**/*.h5
+**/*.zip
+**/*.gz
+**/*.tar
+**/*.pdf
+**/*.png
+**/*.jpg
+**/*.jpeg
+
+# JavaScript dependencies and generated frontend output
+**/node_modules/
+frontend/.next/
+frontend/out/
+frontend/coverage/
+frontend/playwright-report/
+frontend/test-results/
+frontend/tsconfig.tsbuildinfo
+
+# Build, coverage, and test output
+build/
+dist/
+coverage/
+playwright-report/
+test-results/
+*.egg-info/
+
+# Logs, temporary files, and editor/OS state
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+
+# Markdown policy: only the root README is source-controlled
+*.md
+!/README.md
+*.markdown
+*.mdx
+*.mdown
+*.mkd
+*.mkdn
+*.mdwn
